@@ -1,0 +1,53 @@
+[
+  {
+    "name": "pnp-list-formatting-postcard-with-stamp",
+    "reponame": "postcard-with-stamp",
+    "source": "pnp",
+    "title": "Postcard with Stamp",
+    "shortDescription": "This SharePoint JSON view formatting sample transforms list items into postcards with a handwritten message, stamp, rotated postmark and address block.",
+    "url": "https://github.com/pnp/list-formatting/tree/master/view-samples/postcard-with-stamp",
+    "longDescription": [
+      "This SharePoint JSON view formatting sample transforms list items into postcards.",
+      "Each card renders as a postcard back with a handwritten-style message on the left and a stamp, rotated postmark and address block on the right. Colours, stamp icon and stamp/accent colours are all driven from list columns so each card can be re-skinned per item."
+    ],
+    "creationDateTime": "2026-05-13T00:00:00.000Z",
+    "updateDateTime": "2026-05-13T00:00:00.000Z",
+    "products": [
+      "SharePoint",
+      "Microsoft Lists"
+    ],
+    "metadata": [
+      { "key": "LIST-SAMPLE-TYPE", "value": "View" },
+      { "key": "SHAREPOINT-COMPATIBILITY", "value": "SharePoint Online" },
+      { "key": "SAMPLE-CATEGORIES", "value": "" },
+      { "key": "LIST-COLUMN-TYPE", "value": "" },
+      { "key": "FORMATTING-TOKENS", "value": "" },
+      { "key": "FORMATTING-OPERATORS", "value": "" },
+      { "key": "FORMATTING-ACTIONS", "value": "" },
+      { "key": "FORMATTING-FEATURES", "value": "hideSelection, hideColumnHeader, rowFormatter" },
+      { "key": "CLASSES", "value": "" }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/List-Formatting/master/view-samples/postcard-with-stamp/assets/screenshot.png",
+        "alt": "screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sudeepghatak",
+        "pictureUrl": "https://github.com/sudeepghatak.png",
+        "name": "Sudeep Ghatak"
+      }
+    ],
+    "references": [
+      {
+        "name": "Use view formatting to customize SharePoint",
+        "description": "You can use view formatting to customize how items in SharePoint lists and libraries are displayed.",
+        "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/view-formatting"
+      }
+    ]
+  }
+]
