@@ -1,0 +1,53 @@
+[
+  {
+    "name": "pnp-list-formatting-sports-card",
+    "reponame": "sports-card",
+    "source": "pnp",
+    "title": "Sports Card",
+    "shortDescription": "This SharePoint JSON view formatting sample transforms list items into vertical sports trading cards with header bar, country badge, player silhouette, name band, star rating and three stat bars.",
+    "url": "https://github.com/pnp/list-formatting/tree/master/view-samples/sports-card",
+    "longDescription": [
+      "This SharePoint JSON view formatting sample transforms list items into vertical FIFA / NBA style trading cards.",
+      "Each card has a header bar with sport name and jersey number, a hero area with country badge and player silhouette, an accent-coloured name band, a star rating, three labelled stat bars and a short description. Colours, icons and stat values are all driven from list columns so each card can be re-skinned per item."
+    ],
+    "creationDateTime": "2026-05-13T00:00:00.000Z",
+    "updateDateTime": "2026-05-13T00:00:00.000Z",
+    "products": [
+      "SharePoint",
+      "Microsoft Lists"
+    ],
+    "metadata": [
+      { "key": "LIST-SAMPLE-TYPE", "value": "View" },
+      { "key": "SHAREPOINT-COMPATIBILITY", "value": "SharePoint Online" },
+      { "key": "SAMPLE-CATEGORIES", "value": "" },
+      { "key": "LIST-COLUMN-TYPE", "value": "" },
+      { "key": "FORMATTING-TOKENS", "value": "" },
+      { "key": "FORMATTING-OPERATORS", "value": "+, toString" },
+      { "key": "FORMATTING-ACTIONS", "value": "" },
+      { "key": "FORMATTING-FEATURES", "value": "hideSelection, hideColumnHeader, rowFormatter" },
+      { "key": "CLASSES", "value": "" }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/List-Formatting/master/view-samples/sports-card/assets/screenshot.png",
+        "alt": "screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sudeepghatak",
+        "pictureUrl": "https://github.com/sudeepghatak.png",
+        "name": "Sudeep Ghatak"
+      }
+    ],
+    "references": [
+      {
+        "name": "Use view formatting to customize SharePoint",
+        "description": "You can use view formatting to customize how items in SharePoint lists and libraries are displayed.",
+        "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/view-formatting"
+      }
+    ]
+  }
+]
