@@ -1,0 +1,339 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "max-width": "740px",
+      "min-height": "170px",
+      "margin": "12px auto",
+      "background-color": "[$BackgroundColor]",
+      "color": "#ffffff",
+      "border-radius": "10px",
+      "overflow": "hidden",
+      "font-family": "Arial, sans-serif",
+      "box-shadow": "0 8px 22px rgba(0,0,0,0.5)"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "170px",
+          "flex-shrink": "0",
+          "background-color": "rgba(255,255,255,0.06)",
+          "position": "relative",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "iconName": "[$PlayerIcon]"
+            },
+            "style": {
+              "font-size": "110px",
+              "color": "rgba(255,255,255,0.85)"
+            }
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Country]",
+            "style": {
+              "position": "absolute",
+              "bottom": "10px",
+              "left": "10px",
+              "background-color": "[$AccentColor]",
+              "padding": "4px 10px",
+              "border-radius": "3px",
+              "font-size": "10px",
+              "font-weight": "bold",
+              "letter-spacing": "2px",
+              "color": "#ffffff"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex-grow": "1",
+          "min-width": "0",
+          "padding": "14px 18px",
+          "display": "flex",
+          "flex-direction": "column",
+          "justify-content": "space-between"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "space-between"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "[$Sport]",
+                "style": {
+                  "font-size": "12px",
+                  "font-weight": "bold",
+                  "letter-spacing": "3px",
+                  "text-transform": "uppercase",
+                  "color": "rgba(255,255,255,0.85)"
+                }
+              },
+              {
+                "elmType": "div",
+                "txtContent": "=toString([$JerseyNumber])",
+                "style": {
+                  "background-color": "[$AccentColor]",
+                  "padding": "2px 14px",
+                  "font-size": "20px",
+                  "font-weight": "bold",
+                  "border-radius": "4px",
+                  "color": "#ffffff",
+                  "min-width": "36px",
+                  "text-align": "center"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "margin": "10px 0 8px"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "txtContent": "[$Title]",
+                "style": {
+                  "font-size": "20px",
+                  "font-weight": "bold",
+                  "text-transform": "uppercase",
+                  "letter-spacing": "1px",
+                  "line-height": "22px",
+                  "padding-right": "10px"
+                }
+              },
+              {
+                "elmType": "span",
+                "attributes": {
+                  "iconName": "[$SportIcon]"
+                },
+                "style": {
+                  "font-size": "22px",
+                  "color": "[$AccentColor]",
+                  "flex-shrink": "0"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Rating]",
+            "style": {
+              "font-size": "14px",
+              "color": "[$AccentColor]",
+              "letter-spacing": "2px"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "260px",
+          "flex-shrink": "0",
+          "padding": "14px 16px",
+          "border-left": "1px solid rgba(255,255,255,0.12)",
+          "display": "flex",
+          "flex-direction": "column",
+          "justify-content": "space-between"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "align-items": "center",
+                  "padding": "2px 0"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "[$Stat1Label]",
+                    "style": {
+                      "width": "32px",
+                      "font-size": "10px",
+                      "font-weight": "bold",
+                      "letter-spacing": "1px",
+                      "color": "rgba(255,255,255,0.85)"
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "flex-grow": "1",
+                      "height": "5px",
+                      "background-color": "rgba(255,255,255,0.18)",
+                      "border-radius": "3px",
+                      "margin": "0 8px",
+                      "overflow": "hidden"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "height": "5px",
+                          "background-color": "[$AccentColor]",
+                          "width": "=toString([$Stat1Value]) + '%'"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "txtContent": "=toString([$Stat1Value])",
+                    "style": {
+                      "width": "22px",
+                      "text-align": "right",
+                      "font-size": "10px",
+                      "font-weight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "align-items": "center",
+                  "padding": "2px 0"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "[$Stat2Label]",
+                    "style": {
+                      "width": "32px",
+                      "font-size": "10px",
+                      "font-weight": "bold",
+                      "letter-spacing": "1px",
+                      "color": "rgba(255,255,255,0.85)"
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "flex-grow": "1",
+                      "height": "5px",
+                      "background-color": "rgba(255,255,255,0.18)",
+                      "border-radius": "3px",
+                      "margin": "0 8px",
+                      "overflow": "hidden"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "height": "5px",
+                          "background-color": "[$AccentColor]",
+                          "width": "=toString([$Stat2Value]) + '%'"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "txtContent": "=toString([$Stat2Value])",
+                    "style": {
+                      "width": "22px",
+                      "text-align": "right",
+                      "font-size": "10px",
+                      "font-weight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "align-items": "center",
+                  "padding": "2px 0"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "[$Stat3Label]",
+                    "style": {
+                      "width": "32px",
+                      "font-size": "10px",
+                      "font-weight": "bold",
+                      "letter-spacing": "1px",
+                      "color": "rgba(255,255,255,0.85)"
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "flex-grow": "1",
+                      "height": "5px",
+                      "background-color": "rgba(255,255,255,0.18)",
+                      "border-radius": "3px",
+                      "margin": "0 8px",
+                      "overflow": "hidden"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "height": "5px",
+                          "background-color": "[$AccentColor]",
+                          "width": "=toString([$Stat3Value]) + '%'"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "txtContent": "=toString([$Stat3Value])",
+                    "style": {
+                      "width": "22px",
+                      "text-align": "right",
+                      "font-size": "10px",
+                      "font-weight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Description]",
+            "style": {
+              "font-size": "10px",
+              "line-height": "13px",
+              "color": "rgba(255,255,255,0.7)",
+              "font-style": "italic",
+              "margin-top": "8px"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
