@@ -35,6 +35,10 @@ Days remaining is computed as:
 
 This yields a positive integer (days left), 0 (due today), or a negative integer (overdue). All conditional styling, icon selection, and label text branch from this single expression.
 
+A PowerShell script has been provided in the [assets](./assets/Create%20List.ps1) folder to provision the list and seed one item per urgency tier for you.
+
+**Note:** This script uses [PnP PowerShell](https://pnp.github.io/powershell/) and requires an environment ready for PnP PowerShell.
+
 ## Sample
 
 Solution|Author
