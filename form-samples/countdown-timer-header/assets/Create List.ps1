@@ -1,6 +1,5 @@
 # Connect to SharePoint
-#Connect-PnPOnline -Url "https://yourtenant.sharepoint.com/sites/yoursite" -Interactive
-
+Connect-PnPOnline -Url "https://yourtenant.sharepoint.com/sites/yoursite" -clientId "CLIENT_ID" -tenant "TENANT_ID" -DeviceLogin
 # Create the list
 $listName = "TaskCountdown"
 New-PnPList -Title $listName -Template GenericList -OnQuickLaunch
@@ -16,43 +15,43 @@ Write-Host "List '$listName' created with Title and DueDate columns." -Foregroun
 # Seed sample items — one per urgency tier
 # Re-declared so this block can be run independently (e.g. selection-run in VS Code).
 $listName = "TaskCountdown"
-$today    = [DateTime]::Today
+$today = [DateTime]::Today
 
 $sampleItems = @(
-    @{
-        Title   = "Submit Annual Report"
-        DueDate = $today.AddDays(14)
-        _Tier   = "Calm (green) — 14 days out"
-    },
-    @{
-        Title   = "Review Budget Proposal"
-        DueDate = $today.AddDays(5)
-        _Tier   = "Warning (amber) — 5 days out"
-    },
-    @{
-        Title   = "Sign Off on Vendor Contract"
-        DueDate = $today.AddDays(2)
-        _Tier   = "Urgent (red) — 2 days out"
-    },
-    @{
-        Title   = "Submit Expense Claims"
-        DueDate = $today
-        _Tier   = "Due Today (crimson 0)"
-    },
-    @{
-        Title   = "Complete Compliance Training"
-        DueDate = $today.AddDays(-3)
-        _Tier   = "Overdue (crimson) — 3 days past"
-    }
+  @{
+    Title   = "Submit Annual Report"
+    DueDate = $today.AddDays(14)
+    _Tier   = "Calm (green) — 14 days out"
+  },
+  @{
+    Title   = "Review Budget Proposal"
+    DueDate = $today.AddDays(5)
+    _Tier   = "Warning (amber) — 5 days out"
+  },
+  @{
+    Title   = "Sign Off on Vendor Contract"
+    DueDate = $today.AddDays(2)
+    _Tier   = "Urgent (red) — 2 days out"
+  },
+  @{
+    Title   = "Submit Expense Claims"
+    DueDate = $today
+    _Tier   = "Due Today (crimson 0)"
+  },
+  @{
+    Title   = "Complete Compliance Training"
+    DueDate = $today.AddDays(-3)
+    _Tier   = "Overdue (crimson) — 3 days past"
+  }
 )
 
 foreach ($item in $sampleItems) {
-    $values = @{
-        Title   = $item.Title
-        DueDate = $item.DueDate
-    }
-    Add-PnPListItem -List $listName -Values $values | Out-Null
-    Write-Host "  Added [$($item._Tier)]: $($item.Title)" -ForegroundColor Cyan
+  $values = @{
+    Title   = $item.Title
+    DueDate = $item.DueDate
+  }
+  Add-PnPListItem -List $listName -Values $values | Out-Null
+  Write-Host "  Added [$($item._Tier)]: $($item.Title)" -ForegroundColor Cyan
 }
 
 Write-Host "Seeded $($sampleItems.Count) items into '$listName'." -ForegroundColor Green
