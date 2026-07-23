@@ -1,0 +1,86 @@
+[
+  {
+    "name": "pnp-list-formatting-countdown-timer-header",
+    "reponame": "countdown-timer-header",
+    "source": "pnp",
+    "title": "Countdown Timer Header",
+    "shortDescription": "A form header formatter that displays days remaining until a due date with color-coded urgency: green (calm, >7 days), amber (warning, 4-7 days), red (urgent, 1-3 days), and crimson (overdue).",
+    "url": "https://github.com/pnp/List-Formatting/tree/master/form-samples/countdown-timer-header",
+    "longDescription": [
+      "A form header formatter that displays days remaining until a due date with color-coded urgency: green (calm, >7 days), amber (warning, 4-7 days), red (urgent, 1-3 days), and crimson (overdue).",
+      "The header shows the item title on the left and a countdown badge on the right with the day count, urgency label (DAYS LEFT / DUE TODAY / OVERDUE), and formatted due date.",
+      "All conditional logic is driven by date arithmetic on the DueDate column using the @now token."
+    ],
+    "creationDateTime": "2026-07-23T00:00:00.000Z",
+    "updateDateTime": "2026-07-23T00:00:00.000Z",
+    "products": [
+      "SharePoint",
+      "Microsoft Lists"
+    ],
+    "metadata": [
+      {
+        "key": "LIST-SAMPLE-TYPE",
+        "value": "Form"
+      },
+      {
+        "key": "SHAREPOINT-COMPATIBILITY",
+        "value": "SharePoint Online"
+      },
+      {
+        "key": "SAMPLE-CATEGORIES",
+        "value": "Date, Urgency, Countdown"
+      },
+      {
+        "key": "LIST-COLUMN-TYPE",
+        "value": "Date and Time"
+      },
+      {
+        "key": "FORMATTING-TOKENS",
+        "value": "@now"
+      },
+      {
+        "key": "FORMATTING-OPERATORS",
+        "value": "floor, toString, if"
+      },
+      {
+        "key": "FORMATTING-ACTIONS",
+        "value": ""
+      },
+      {
+        "key": "FORMATTING-FEATURES",
+        "value": ""
+      },
+      {
+        "key": "CLASSES",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/List-Formatting/master/form-samples/countdown-timer-header/assets/screenshot.png",
+        "alt": "screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sudeepghatak",
+        "pictureUrl": "https://github.com/sudeepghatak.png",
+        "name": "Sudeep Ghatak"
+      }
+    ],
+    "references": [
+      {
+        "name": "Configure the list form",
+        "description": "You can configure the list form in a list or library with a custom header, footer and the form body with one or more sections with fields in each of those sections.",
+        "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/list-form-configuration"
+      },
+      {
+        "name": "Use formatting to customize SharePoint — Date functions",
+        "description": "Documentation on @now, floor(), and date arithmetic in SharePoint formatting expressions.",
+        "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/formatting-syntax-reference"
+      }
+    ]
+  }
+]
