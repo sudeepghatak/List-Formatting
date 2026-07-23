@@ -1,0 +1,93 @@
+{
+  "elmType": "div",
+  "style": {
+    "display": "flex",
+    "justify-content": "space-between",
+    "align-items": "center",
+    "border-radius": "8px",
+    "padding": "16px 20px",
+    "background-color": "=if(floor(([$DueDate] - @now) / 86400000) > 7, '#1e7e34', if(floor(([$DueDate] - @now) / 86400000) > 3, '#b8860b', if(floor(([$DueDate] - @now) / 86400000) > 0, '#c0392b', '#6d0000')))",
+    "color": "#ffffff",
+    "min-height": "80px"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "txtContent": "[$Title]",
+      "style": {
+        "flex": "1",
+        "font-size": "24px",
+        "font-weight": "600",
+        "margin-right": "16px",
+        "line-height": "1.2",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "background-color": "rgba(0,0,0,0.2)",
+        "border-radius": "6px",
+        "padding": "8px 16px",
+        "min-width": "110px",
+        "text-align": "center"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "display": "flex",
+            "align-items": "center",
+            "justify-content": "center"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "attributes": {
+                "iconName": "=if(floor(([$DueDate] - @now) / 86400000) > 7, 'Timer', if(floor(([$DueDate] - @now) / 86400000) > 3, 'Clock', if(floor(([$DueDate] - @now) / 86400000) > 0, 'Warning', 'ErrorBadge')))"
+              },
+              "style": {
+                "font-size": "20px",
+                "margin-right": "6px",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "elmType": "div",
+              "txtContent": "=if(floor(([$DueDate] - @now) / 86400000) >= 0, toString(floor(([$DueDate] - @now) / 86400000)), toString(floor(([$DueDate] - @now) / 86400000) * -1))",
+              "style": {
+                "font-size": "48px",
+                "font-weight": "700",
+                "line-height": "1",
+                "color": "#ffffff"
+              }
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "txtContent": "=if(floor(([$DueDate] - @now) / 86400000) > 0, 'DAYS LEFT', if(floor(([$DueDate] - @now) / 86400000) == 0, 'DUE TODAY', 'OVERDUE'))",
+          "style": {
+            "font-size": "11px",
+            "font-weight": "700",
+            "letter-spacing": "1px",
+            "color": "#ffffff",
+            "margin-top": "4px"
+          }
+        },
+        {
+          "elmType": "div",
+          "txtContent": "[$DueDate.displayValue]",
+          "style": {
+            "font-size": "10px",
+            "color": "rgba(255,255,255,0.85)",
+            "margin-top": "4px"
+          }
+        }
+      ]
+    }
+  ]
+}
