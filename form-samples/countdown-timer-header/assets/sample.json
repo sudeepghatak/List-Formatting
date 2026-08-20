@@ -28,11 +28,11 @@
       },
       {
         "key": "SAMPLE-CATEGORIES",
-        "value": "Date, Urgency, Countdown"
+        "value": "Icons"
       },
       {
         "key": "LIST-COLUMN-TYPE",
-        "value": "Date and Time"
+        "value": ""
       },
       {
         "key": "FORMATTING-TOKENS",
@@ -40,7 +40,7 @@
       },
       {
         "key": "FORMATTING-OPERATORS",
-        "value": "floor, toString, if"
+        "value": "floor, toString"
       },
       {
         "key": "FORMATTING-ACTIONS",
@@ -75,6 +75,11 @@
         "name": "Configure the list form",
         "description": "You can configure the list form in a list or library with a custom header, footer and the form body with one or more sections with fields in each of those sections.",
         "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/list-form-configuration"
+      },
+      {
+        "name": "Show or hide columns in a list or library form",
+        "description": "You can show or hide columns in a list or library form as an alternative to deleting them. When you hide a column, it doesn\u0027t affect the column or the data in the column, as it would if you delete it.",
+        "url": "https://docs.microsoft.com/sharepoint/dev/declarative-customization/list-form-conditional-show-hide"
       },
       {
         "name": "Use formatting to customize SharePoint — Date functions",
